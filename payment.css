@@ -1,0 +1,76 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  object {
+    width: 100%;
+  }
+  
+  form {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 30px;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 3.0rem;
+    margin: 0.5rem 0;
+    color: #F15D00;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #F15D00;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: blue;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+  }
+  
+  #success-message {
+    display: none;
+    color: #F15D00;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+

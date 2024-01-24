@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Restaurantista</title>
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <form id="payment-form" autocomplete="on">
+      <label for="name">Name on card:</label>
+      <input type="text" id="name" name="name" placeholder="Fil Fis" required />
+      <label for="card-number">Card number:</label>
+      <input
+        type="text"
+        id="card-number"
+        name="card-number"
+        pattern="[0-9]{13,16}"
+        required
+      />
+      <label for="cvc">CVC:</label>
+      <input type="text" id="cvc" name="cvc" required pattern="[0-9]{3,4}" />
+      <label for="expiration-date">Expiration date:</label>
+      <input
+        type="text"
+        id="expiration-date"
+        name="expiration-date"
+        required
+        placeholder="MM/YY"
+      />
+      <button type="submit" id="pay-button">Pay</button>
+    </form>
+    <div id="success-message" style="display: none">
+      <p>
+        Thank you for your payment. Your order will be delivered within 1 hour.
+      </p>
+    </div>
+  </body>
+  <div id="footer-placeholder"></div>
+  <script src="payment.js"></script>
+  <script src="templates.js"></script>
+  <script src="ajax.js"></script>
+</html>
